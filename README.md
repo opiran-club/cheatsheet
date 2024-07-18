@@ -1,5 +1,7 @@
 # MySQL Cheat Sheet
 
+https://opiran-club.github.io/mysql-cheatsheet/
+
 > Help with SQL commands to interact with a MySQL database
 
 ## MySQL Locations
