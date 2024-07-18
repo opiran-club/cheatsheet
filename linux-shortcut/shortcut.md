@@ -1,3 +1,34 @@
+## common and regular code
+
+### setting root
+```
+sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && sudo systemctl restart ssh
+```
+
+### change DNS to google
+```
+rm -rf /etc/resolv.conf && touch /etc/resolv.conf && echo 'nameserver 8.8.8.8' >> /etc/resolv.conf && echo 'nameserver 4.2.2.4' >> /etc/resolv.conf
+```
+to set another DNS change 8.8.8.8 and 4.2.2.4 to another DNS server 
+
+### Set github to host (to use ipv4 as a primary ip for resolving github)
+```
+echo "185.199.108.133 raw.githubusercontent.com" > /etc/hosts
+```
+### Bench mark 
+
+## 1
+```
+wget -qO- network-speed.xyz | bash -s -- -r eu
+```
+to change the endpoint change "eu" to another one (ir, us, ....)
+
+## 2
+```
+wget -qO- bench.sh | bash
+```
+-----------------------------------------------------------------------------------------------------------------------------
+
 ## command line shortcut keys
 
 
