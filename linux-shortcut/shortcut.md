@@ -31,7 +31,7 @@
  - **Ctrl K**: Delete all characters after the cursor
  - **Ctrl U**: Clear the currently typed command
  - **Ctrl W**: Delete the word before the cursor (Word, string without spaces)
- - **Ctrl \**: Delete all blank characters before the cursor
+ - Ctrl \: Delete all blank characters before the cursor
  - **Ctrl Y**: Paste the content deleted by **Ctrl W** or **Ctrl K**
  - **Alt .**: Paste the last parameter of the previous command (very useful)
  - **Alt [0-9] Alt .** Paste the [0-9]th parameter of the previous command
