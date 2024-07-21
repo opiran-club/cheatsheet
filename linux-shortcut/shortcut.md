@@ -27,6 +27,39 @@ to change the endpoint change "eu" to another one (ir, us, ....)
 ```
 wget -qO- bench.sh | bash
 ```
+
+Using journalctl & sytemctl
+## display last line
+```
+journalctl -b -1 -e
+```
+
+## follow log stream
+```
+journalctl -u <service> -f
+```
+
+## restart service
+```
+systemctl restart <service>
+```
+
+Compress folder while excluding certain files
+```
+tar -zcvf file.tar.gz --exclude=".git/*" --exclude="*.zip"
+```
+
+## Check custom dns with dig
+```
+dig cluster.local @127.0.0.1 -p 10053 +tcp
+```
+## Search and replace
+```
+:args templates/*.yaml
+:argdo %s/foo/bar/g
+```
+
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 ## command line shortcut keys
