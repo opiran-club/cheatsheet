@@ -79,3 +79,35 @@ http://your-IP/phpmyadmin
 توجه داشته باشید که در بیشتر مواقع phpmyadmin بسته‌های مورد نیز را برای شما نصب و تنظیمات وب سرور را به صورت اتوماتیک انجام میدهد. اما در بعضی‌ موارد خاص نیاز است بعضی‌ بسته‌ها و تنظیمات وب سرور به صورت دستی‌ انجام شود.
 
 همچنین بدون ست کردن پسورد برای MariaDB امکان ورود به PHPmyadmin را ندارید.
+
+
+---------------------------------------------------------------------------
+## MariaDB cheatsheet
+
+
+# Create db
+CREATE DATABASE 'testDB';
+
+# Create user on localhost
+CREATE USER 'user1'@localhost IDENTIFIED BY 'password1';
+# for all hosts
+CREATE USER 'user1'@'%' IDENTIFIED BY 'password1';
+
+# Grant all privileges on all dbs
+GRANT ALL PRIVILEGES ON *.* TO 'user1'@localhost IDENTIFIED BY 'password1';
+# Grant all privileges on single db
+GRANT ALL PRIVILEGES ON testDB.* TO 'user1'@localhost IDENTIFIED BY 'password1';
+# Important to flush
+FLUSH PRIVILEGES;
+
+# Check grants for user
+SHOW GRANTS FOR 'user1'@localhost;
+
+# Remove user
+DROP USER 'user1'@localhost;
+
+# Check remote users
+SELECT User, Host FROM mysql.user WHERE Host <> 'localhost';
+
+# User to access from local lan
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.100.%' IDENTIFIED BY 'my-new-password' WITH GRANT OPTION;
