@@ -2,6 +2,8 @@
 ## Content: preview on static website
 
  - [MySQL Cheat Sheet](https://opiran-club.github.io/cheat-sheet/mysql/mysql)
+ - [Mariadb](https://opiran-club.github.io/cheat-sheet/mariadb/mariadb)
+ - [SQL]()
  - [Linux Shortcuts & common code](https://opiran-club.github.io/cheat-sheet/linux-shortcut/shortcut)
  - [BBR](https://opiran-club.github.io/cheat-sheet/BBR/bbr)
  - [Dockerize RDP](https://opiran-club.github.io/cheat-sheet/RDP%26Browser/webtop)
